@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from "react";
+import { Header, HeaderText } from "./estilo-componentes/styles-comp.jsx"
+import './slick-carousel/Slick.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel';
+import './components/Footer.css';
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Cambiar o volver a la misma imagen
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % 5); // se cambia por el numero de imagenes
+    }, 5000); // el tiempo que se cambia en milisegundos
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      
+      <Header>
+      <img src="img/Logo.png" alt="Descripción de la imagen" className="logo" />
+      <HeaderText>BIENVENIDOS A RENTMYRIDE</HeaderText>
+      </Header>
+
+
+      
+      <Carousel className="carrusel-container" selectedItem={currentSlide}>
+        <div className="slider-item">
+          <img src="img/img1.jpg" alt="Imagen 1" />
+        </div>
+        <div className="slider-item">
+          <img src="img/img2.jpg" alt="Imagen 2" />
+        </div>
+        <div className="slider-item">
+          <img src="img/img3.jpg" alt="Imagen 3" />
+        </div>
+        <div className="slider-item">
+          <img src="img/img4.jpg" alt="Imagen 4" />
+        </div>
+        <div className="slider-item">
+          <img src="img/img5.jpg" alt="Imagen 5" />
+        </div>
+      </Carousel>
+
+      <footer className="footer">
+      <div className="redes-sociales">
+        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="img/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
       </div>
-      <h1>RentMyRide</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;

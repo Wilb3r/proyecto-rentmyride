@@ -1,0 +1,19 @@
+.carrusel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.slider-item {
+  max-height: 385px; /* tamño maximo de la img*/
+  margin-right: 10px;
+}
+
+
+.logo {
+  width: 150px; /* ancho segun sea necesario*/
+  height: auto; /* mantiene la proporcion de la img*/
+  border-radius: 100px;
+}

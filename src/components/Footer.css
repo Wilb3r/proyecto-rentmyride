@@ -1,0 +1,24 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #FFC94A;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    flex-direction: column; /* alineamos vertical*/
+    align-items: center; /* se entra en horizontal*/
+  }
+  
+  .redes-sociales a {
+    margin: 10px 0; /* Espacio de los iconos*/
+  }
+  
+  .redes-sociales img {
+    width: 30px;
+  }
+  
