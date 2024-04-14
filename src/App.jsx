@@ -16,7 +16,7 @@ function App() {
       <img src="img/Logo.png" alt="Descripción de la imagen" className="logo" />
       <HeaderText>BIENVENIDOS A RENTMYRIDE</HeaderText>
      <nav>
-      <ul>
+      <ul className="nav-link">
         <li><NvLink to="/">Inicio</NvLink></li>
         <li><NvLink to="/vehicles">Vehiculos</NvLink></li>
         <li><NvLink to="/contact">Contact</NvLink></li>

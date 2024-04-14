@@ -11,7 +11,7 @@ header{
   align-content: center;
   padding: 8px;
   justify-content: space-between;
-  
+  text-align: center;
 }
  
 nav ul{
@@ -20,17 +20,24 @@ nav ul{
  
 nav a{
   text-decoration: none;
+  color: black;
 }
  
 nav ul li{
   display: inline-block;
   padding: 10px;
-  text-align: left;
+  text-align: right;
 }
 
 nav a.is-active{
   font-weight: bold;
   pointer-events: none;
- 
+  color: black;
+  background-color: white;
+  border-radius: 5px;
   
+}
+
+.nav-link {
+  margin-left: 8rem; /*Aqui se ordena los nav-links */
 }
