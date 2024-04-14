@@ -1,6 +1,5 @@
 import React from "react";
 import { Header, HeaderText } from "./estilo-componentes/styles-comp.jsx"
-import './components/Footer.css';
 import NvLink from "./components/NavLink.jsx";
 import { Routes, Route } from "react-router-dom";
 import Inicio from "./components/Inicio.jsx";
