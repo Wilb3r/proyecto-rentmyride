@@ -5,23 +5,16 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import './components/Footer.css';
 import { cars as initialProducts } from "./mocks/cars.json"
-
+import NvLink from "./components/NavLink.jsx";
+import { Routes, Route } from "react-router-dom";
+import Inicio from "./components/Inicio.jsx";
+import Contact from "./components/Constact.jsx";
+import About from "./components/About.jsx";
+import Vehicles from "./components/Vehicles.jsx";
 
 
 
 function App() {
-  const [products] = useState(initialProducts);
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // Cambiar o volver a la misma imagen
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % 5); // se cambia por el numero de imagenes
-    }, 5000); // el tiempo que se cambia en milisegundos
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div>
@@ -29,35 +22,23 @@ function App() {
       <Header>
       <img src="img/Logo.png" alt="Descripción de la imagen" className="logo" />
       <HeaderText>BIENVENIDOS A RENTMYRIDE</HeaderText>
+     <nav>
+      <ul>
+        <li><NvLink to="/">Inicio</NvLink></li>
+        <li><NvLink to="/vehicles">Vehiculos</NvLink></li>
+        <li><NvLink to="/contact">Contact</NvLink></li>
+        <li><NvLink to="/about">Acerca de</NvLink></li>
+      </ul>
+     </nav>
       </Header>
+      <Routes>
+        <Route path="/" element={<Inicio/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/vehicles" element={<Vehicles/>}/>
+        <Route path="*" element={<h1>Page not Found</h1>}/>
+      </Routes>
 
-
-      dasd
-      <Carousel className="carrusel-container" selectedItem={currentSlide}>
-        <div className="slider-item">
-          <img src="img/img1.jpg" alt="Imagen 1" />
-        </div>
-        <div className="slider-item">
-          <img src="img/img2.jpg" alt="Imagen 2" />
-        </div>
-        <div className="slider-item">
-          <img src="img/img3.jpg" alt="Imagen 3" />
-        </div>
-        <div className="slider-item">
-          <img src="img/img4.jpg" alt="Imagen 4" />
-        </div>
-        <div className="slider-item">
-          <img src="img/img5.jpg" alt="Imagen 5" />
-        </div>
-      </Carousel>
-
-      <footer className="footer">
-      <div className="redes-sociales">
-        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="img/twitter.png" alt="Twitter" /></a>
-        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
-      </div>
-    </footer>
     </div>
   );
 }

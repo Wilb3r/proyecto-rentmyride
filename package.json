@@ -28,5 +28,10 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "standard": "^17.1.0",
     "vite": "^5.2.0"
+  },
+  "slintConfig": {
+    "extends": [
+      "standard"
+    ]
   }
 }
