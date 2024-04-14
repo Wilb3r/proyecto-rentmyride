@@ -1,18 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Header, HeaderText } from "./estilo-componentes/styles-comp.jsx"
-import './slick-carousel/Slick.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import { Carousel } from 'react-responsive-carousel';
 import './components/Footer.css';
-import { cars as initialProducts } from "./mocks/cars.json"
 import NvLink from "./components/NavLink.jsx";
 import { Routes, Route } from "react-router-dom";
 import Inicio from "./components/Inicio.jsx";
 import Contact from "./components/Constact.jsx";
 import About from "./components/About.jsx";
 import Vehicles from "./components/Vehicles.jsx";
-
-
 
 function App() {
 
