@@ -4,11 +4,14 @@ import './slick-carousel/Slick.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import './components/Footer.css';
+import { cars as initialProducts } from "./mocks/cars.json"
 
 
 
 
 function App() {
+  const [products] = useState(initialProducts);
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -29,7 +32,7 @@ function App() {
       </Header>
 
 
-      
+      dasd
       <Carousel className="carrusel-container" selectedItem={currentSlide}>
         <div className="slider-item">
           <img src="img/img1.jpg" alt="Imagen 1" />
