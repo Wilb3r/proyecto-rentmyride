@@ -15,7 +15,7 @@ import { cars as initialCars } from "../mocks/cars.json"
                                 <img src={car.thumbnail} alt={car.Manufacturer} />
                                 <div>
                                     <strong>
-                                        {car.Manufacturer} - ${car.price*0.004}
+                                        {car.Manufacturer} - ${(car.price*0.002).toFixed(2)}
                                     </strong>
                                 </div>
                             </li>
