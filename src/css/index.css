@@ -33,6 +33,7 @@ nav a.is-active{
   font-weight: bold;
   pointer-events: none;
   color: black;
+  /* text-decoration: underline; */
   background-color: white;
   border-radius: 5px;
   
