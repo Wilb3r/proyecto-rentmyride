@@ -9,9 +9,10 @@ header{
   background-color: palegoldenrod;
   flex-direction: row;
   align-content: center;
-  padding: 8px;
+  padding: 0.1px;
   justify-content: space-between;
   text-align: center;
+ 
 }
  
 nav ul{
@@ -34,7 +35,7 @@ nav a.is-active{
   pointer-events: none;
   color: black;
   /* text-decoration: underline; */
-  background-color: white;
+  /*background-color: white;*/
   border-radius: 5px;
   
 }
