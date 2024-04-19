@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 
 export const Header = styled.header`
    display: flex;
-    background-color: #E4C59E;
+    background-color: #e6e2e2;
     color: black;
     flex-direction: row;
     align-items: center; // se centra verticalmente
     padding: 5px;
-    justify-content: flex-start; // se aline a la izquierda
+    
     font-size: 25px;
     font-style: italic;
+    margin-bottom: 20px;
 `;
 
 export const HeaderText = styled.h2`
