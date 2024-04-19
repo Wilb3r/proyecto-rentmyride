@@ -1,0 +1,14 @@
+
+.filtros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*que se separen entre ellos*/
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 35rem;
+}
+ 
+.filtros > div{
+    display: flex;
+    gap: 1rem;
+}

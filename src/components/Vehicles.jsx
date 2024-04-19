@@ -1,11 +1,18 @@
 import '../css/Cars.css'
 import React, { useState} from "react";
 import { cars as initialCars } from "../mocks/cars.json"
+import { Filters } from './Filters';
+import { useFilters } from '../hooks/useFilter';
+import { FiltersProvider } from '../context/filters';
 
- const Vehicles = () => {
-    const [cars] = useState(initialCars);
+ export function Vehicles( {cars} ){
+    
+
     return (
+        <>
+        <Filters />
         <main className="cars">
+            
             <ul>
                 {
                     cars.slice(0,9).map((car) => {
@@ -24,7 +31,6 @@ import { cars as initialCars } from "../mocks/cars.json"
                 }
             </ul>
         </main>
+        </>
     )
  };
-
- export default Vehicles;

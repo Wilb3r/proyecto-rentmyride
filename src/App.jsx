@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header, HeaderText } from "./estilo-componentes/styles-comp.jsx"
 import NvLink from "./components/NavLink.jsx";
 import { Routes, Route } from "react-router-dom";
 import Inicio from "./components/Inicio.jsx";
 import Contact from "./components/Constact.jsx";
 import About from "./components/About.jsx";
-import Vehicles from "./components/Vehicles.jsx";
+import { Vehicles } from "./components/Vehicles.jsx";
+import { cars as initialCars } from "./mocks/cars.json"
+import { useFilters } from "./hooks/useFilter.jsx";
+import { FiltersProvider } from "./context/filters.jsx";
 
 function App() {
-
+  const [cars] = useState(initialCars);
+  const { filterCars } = useFilters();
+  const filteredCars = filterCars(cars);
+  
   return (
     <div>
       
@@ -28,7 +34,7 @@ function App() {
         <Route path="/" element={<Inicio/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/about" element={<About/>}/>
-        <Route path="/vehicles" element={<Vehicles/>}/>
+        <Route path="/vehicles" element={<Vehicles cars={filteredCars}/>}/>
         <Route path="*" element={<h1>Page not Found</h1>}/>
       </Routes>
 
