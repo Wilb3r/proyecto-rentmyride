@@ -12,7 +12,9 @@ import { FiltersProvider } from "./context/filters.jsx";
 
 function App() {
   const [cars] = useState(initialCars);
+
   const { filterCars } = useFilters();
+  
   const filteredCars = filterCars(cars);
   
   return (
