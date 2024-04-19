@@ -21,7 +21,7 @@ export function Filters() {
             <div>
                 <label htmlFor={ typeFilterId }>Tipo</label>
                 <select name="type" id={typeFilterId} onChange={ handleChangeType }>
-                    <option value="all">Todas</option>
+                    <option value="all">Todos</option>
                     <option value="Hatchback">Hatchback</option>
                     <option value="Sedan">Sedan</option>
                     <option value="SUV">SUV</option>
