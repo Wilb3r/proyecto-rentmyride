@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Header = styled.header`
    display: flex;
-    background-color: #FFC94A;
+    background-color: #E4C59E;
     color: black;
     flex-direction: row;
     align-items: center; // se centra verticalmente
@@ -14,7 +14,7 @@ export const Header = styled.header`
 `;
 
 export const HeaderText = styled.h2`
-    margin-left: 10px; //ajuste margen a la izquierda
+    margin-left: 1px; //ajuste margen a la izquierda
     
 `;
 
@@ -22,3 +22,4 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
 
 `;
+

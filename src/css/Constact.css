@@ -5,12 +5,17 @@
     padding: 20px;
     position: relative;
     font-size: 19px;;
+    color: black;
+}
+
+strong{
+    color: black;
 }
 
 /* Estilos para el botón de abrir formulario */
 .contact-form-toggle {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #f2f3f5;
+    color: #070101;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
