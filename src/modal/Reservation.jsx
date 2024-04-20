@@ -31,7 +31,7 @@ function Reservation({ car }) {
         phone,
         carId: car.id,
       };
-      console.log(reservationData);
+      
       setSelected(true);
       handleClose(); 
     }
@@ -46,7 +46,7 @@ function Reservation({ car }) {
         onClick={handleShow}
         disabled={selected}
       >
-        {selected ? "Reservado" : "Select"}
+        {selected ? "Reservado" : "Seleccionar"}
       </Button>
 
       <Modal show={show} onHide={handleClose}>
@@ -65,9 +65,6 @@ function Reservation({ car }) {
                 dateFormat="dd/MM/yyyy"
                 className="form-control"
               />
-              <Form.Control.Feedback type="invalid">
-                Por favor selecciona una fecha de inicio.
-              </Form.Control.Feedback>
             </Form.Group>
             <Form.Group controlId="endDate">
               <Form.Label>Fecha de finalización:</Form.Label>
@@ -79,9 +76,6 @@ function Reservation({ car }) {
                 dateFormat="dd/MM/yyyy"
                 className="form-control"
               />
-              <Form.Control.Feedback type="invalid">
-                Por favor selecciona una fecha de finalización.
-              </Form.Control.Feedback>
             </Form.Group>
             <Form.Group controlId="name">
               <Form.Label>Nombre:</Form.Label>

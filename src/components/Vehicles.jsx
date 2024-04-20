@@ -103,7 +103,6 @@ export function Vehicles({ cars }) {
                     </div>
                     <div className="boton">
                     <ReservationModal car={car} />
-                      
                     </div>
                   </div>
                   <div className="linea"></div>
