@@ -3,7 +3,8 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../css/Cars.css";
 import React, { useState } from "react";
-import { Filters } from "./Filters";
+import { Filters } from "./Filters"
+import ReservationModal from "../modal/Reservation";
 
 export function Vehicles({ cars }) {
   return (
@@ -101,7 +102,8 @@ export function Vehicles({ cars }) {
                       Cancelacion gratis
                     </div>
                     <div className="boton">
-                      <Button variant="primary">Select</Button>
+                    <ReservationModal car={car} />
+                      
                     </div>
                   </div>
                   <div className="linea"></div>
