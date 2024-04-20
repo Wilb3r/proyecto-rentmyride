@@ -33,8 +33,7 @@ function Reservation({ car }) {
       };
       console.log(reservationData);
       setSelected(true);
-      // Aquí puedes agregar lógica adicional, como enviar los datos a través de una API
-      handleClose(); // Cierra el modal después de enviar el formulario
+      handleClose(); 
     }
 
     setValidated(true);
