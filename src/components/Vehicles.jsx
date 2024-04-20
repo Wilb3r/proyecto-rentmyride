@@ -29,7 +29,7 @@ export function Vehicles({ cars }) {
                     <div>
                       <Card.Title> {car.Manufacturer}</Card.Title>
                     </div>
-                    <div>Económico similar</div>
+                    <div> {car.model} - {car.year} </div>
                   </Card.Body>
                   <div className="diviciones"></div>
                   <div className="container">
