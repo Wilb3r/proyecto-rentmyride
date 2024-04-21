@@ -5,10 +5,16 @@
     justify-content: space-between;/*que se separen entre ellos*/
     font-size: 12px;
     font-weight: 700;
-    margin-left: 35rem;
+    width: 20%;
+    border: none;
 }
  
 .filtros > div{
     display: flex;
     gap: 1rem;
+}
+
+#dropdown-basic{
+    background-color: rgb(70, 125, 125);
+    border: none;
 }

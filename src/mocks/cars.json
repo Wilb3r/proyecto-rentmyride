@@ -7,11 +7,11 @@
       "type": "Hatchback",
       "price": 7495,
       "transmission": "Manual",
-      "suitcases": 2,
+      "suitcases": 3,
       "fuelType": "Gasolina",
       "doors": 4,
       "mpg": 60.1,
-      "passengers": 5,
+      "passengers": 4,
       "Manufacturer": "Hyundai",
       "thumbnail": "https://hyundaielsalvador.com/images/modelos/nios/elementos/lado1.jpg"
     },

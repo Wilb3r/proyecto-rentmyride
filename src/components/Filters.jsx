@@ -1,33 +1,50 @@
-import { useId } from 'react';
-import '../css/Filters.css';
-import { useFilters } from '../hooks/useFilter';
+import { useId } from "react";
+import "../css/Filters.css";
+import { useFilters } from "../hooks/useFilter";
+import Dropdown from "react-bootstrap/Dropdown";
 
 export function Filters() {
-    const { filters, setFilters } = useFilters();
+  const { filters, setFilters } = useFilters();
 
-    //Generar id
-    const typeFilterId = useId();
+  //Generar id
+  const typeFilterId = useId();
 
-    const handleChangeType = (event) => {
-        setFilters(prevState => ({
-            ...prevState,
-            type: event.target.value
-        }))
-    }
+  const handleChangeType = (type) => {
+    setFilters((prevState) => ({
+      ...prevState,
+      type: type,
+    }));
+  };
 
-    return(
-        <section className="filtros">
-       
-            <div>
-                <label htmlFor={ typeFilterId }>Tipo</label>
-                <select name="type" id={typeFilterId} onChange={ handleChangeType }>
-                    <option value="all">Todos</option>
-                    <option value="Hatchback">Hatchback</option>
-                    <option value="Sedan">Sedan</option>
-                    <option value="SUV">SUV</option>
-                    <option value="Pickup">Pickup</option>
-                </select>
-            </div>
-        </section>
-    )
+  return (
+    <div>
+      <footer className="footer2">
+        <div className="">
+          <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
+              <label htmlFor={typeFilterId}>Tipo de auto</label>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item onClick={() => handleChangeType("all")}>
+                Todos
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => handleChangeType("Hatchback")}>
+                Hatchback
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => handleChangeType("Sedan")}>
+                Sedan
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => handleChangeType("SUV")}>
+                SUV
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => handleChangeType("Pickup")}>
+                Pickup
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </div>
+      </footer>
+    </div>
+  );
 }
