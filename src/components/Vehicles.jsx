@@ -1,3 +1,4 @@
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -5,7 +6,6 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import "../css/Cars.css";
 import "../script/vehicles";
-import React, { useState } from "react";
 import { Filters } from "./Filters";
 import ReservationModal from "../modal/Reservation";
 

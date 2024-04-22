@@ -4,7 +4,7 @@ import { useFilters } from "../hooks/useFilter";
 import Dropdown from "react-bootstrap/Dropdown";
 
 export function Filters() {
-  const { filters, setFilters } = useFilters();
+  const { setFilters } = useFilters();
 
   //Generar id
   const typeFilterId = useId();

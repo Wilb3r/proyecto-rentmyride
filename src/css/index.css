@@ -43,3 +43,16 @@ nav a.is-active{
 .nav-link {
   margin-left: 8rem; /*Aqui se ordena los nav-links */
 }
+
+@media (max-width: 1400px) {
+  nav ul li {
+    padding: 7px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .nav-link {
+    margin-left: 2rem;
+  }
+  
+}
