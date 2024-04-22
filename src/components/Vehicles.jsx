@@ -169,7 +169,7 @@ export function Vehicles({ cars }) {
                   <div className="diviciones"></div>
                   <div className="pricebutton ">
                     <div className=" price ">
-                      <b>${(car.price * 0.002).toFixed(2)}</b> Uso por dia
+                      <b>${(car.price * 0.002).toFixed(2)}</b> Por día
                       Cancelacion gratis
                     </div>
                     <div className="boton">
