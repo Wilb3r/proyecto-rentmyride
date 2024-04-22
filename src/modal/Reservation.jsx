@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import DatePicker from "react-datepicker";
+import Swal from "sweetalert2";
 import "react-datepicker/dist/react-datepicker.css";
+import "sweetalert2/dist/sweetalert2.css";
 
 function Reservation({ car }) {
   const [show, setShow] = useState(false);
@@ -31,9 +33,17 @@ function Reservation({ car }) {
         phone,
         carId: car.id,
       };
-      
+
       setSelected(true);
-      handleClose(); 
+      handleClose();
+
+      // Show SweetAlert
+      Swal.fire({
+        icon: "success",
+        title: "¡Reserva realizada con éxito!",
+        showConfirmButton: false,
+        timer: 2000
+      });
     }
 
     setValidated(true);
