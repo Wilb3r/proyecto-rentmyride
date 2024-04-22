@@ -8,7 +8,6 @@ import About from "./components/About.jsx";
 import { Vehicles } from "./components/Vehicles.jsx";
 import { cars as initialCars } from "./mocks/cars.json"
 import { useFilters } from "./hooks/useFilter.jsx";
-import { FiltersProvider } from "./context/filters.jsx";
 
 function App() {
   const [cars] = useState(initialCars);

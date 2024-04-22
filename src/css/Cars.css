@@ -60,6 +60,11 @@
     text-align: left;
 }
 
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
 @media (max-width: 1400px) {
   .price {
    font-size: 14px;
@@ -68,4 +73,29 @@
  .pricebutton {
   margin-right: -10px;
  }
+ .col-md-4 {
+  flex: 0 0 auto;
+  width: 30%;
+ }
+}
+
+@media (max-width: 1200px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
 }
