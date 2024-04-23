@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import "../css/Cars.css";
-import "../script/vehicles";
 import { Filters } from "./Filters";
 import ReservationModal from "../modal/Reservation";
 
