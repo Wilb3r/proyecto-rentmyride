@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/About.css';
 
-function About() {
+export function About() {
     return (
         <div className="about-container">
             <h2>Acerca de Nosotros</h2>
@@ -30,4 +30,3 @@ function About() {
     );
 }
 
-export default About;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/Contact.css'; 
 
-function Contact() {
+export function Contact() {
     const [showForm, setShowForm] = useState(false);
 
     const toggleForm = () => {
