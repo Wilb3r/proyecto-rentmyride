@@ -25,7 +25,7 @@ function App() {
      <nav>
       <ul className="nav-link">
         <li><NvLink to="/">Inicio</NvLink></li>
-        <li><NvLink to="/vehicles">Vehiculos</NvLink></li>
+        <li><NvLink to="/vehicles">Vehículos</NvLink></li>
         <li><NvLink to="/contact">Contact</NvLink></li>
         <li><NvLink to="/about">Acerca de</NvLink></li>
       </ul>
