@@ -43,7 +43,7 @@ export function Vehicles({ cars }) {
                         <OverlayTrigger
                           overlay={
                             <Tooltip id={`tooltip-passengers-${car.id}`}>
-                              {car.passengers}
+                              {car.passengers} Pasajeros
                             </Tooltip>
                           }
                         >
@@ -72,7 +72,7 @@ export function Vehicles({ cars }) {
                         <OverlayTrigger
                           overlay={
                             <Tooltip id={`tooltip-passengers-${car.id}`}>
-                              {car.suitcases}
+                              {car.suitcases} Maletas
                             </Tooltip>
                           }
                         >
@@ -135,7 +135,7 @@ export function Vehicles({ cars }) {
                         <OverlayTrigger
                           overlay={
                             <Tooltip id={`tooltip-passengers-${car.id}`}>
-                              {car.mpg}
+                              {car.mpg} Millas/Galón
                             </Tooltip>
                           }
                         >
