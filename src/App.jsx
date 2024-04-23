@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { Header, HeaderText } from "./estilo-componentes/styles-comp.jsx"
-import NvLink from "./components/NavLink.jsx";
+import { About, Contact, Inicio, NvLink, Vehicles} from './components';
 import { Routes, Route } from "react-router-dom";
-import Inicio from "./components/Inicio.jsx";
-import Contact from "./components/Constact.jsx";
-import About from "./components/About.jsx";
-import { Vehicles } from "./components/Vehicles.jsx";
 import { cars as initialCars } from "./mocks/cars.json"
 import { useFilters } from "./hooks/useFilter.jsx";
 

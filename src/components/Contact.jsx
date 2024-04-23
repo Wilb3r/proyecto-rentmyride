@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../css/Constact.css'; 
+import '../css/Contact.css'; 
 
-function Constact() {
+export function Contact() {
     const [showForm, setShowForm] = useState(false);
 
     const toggleForm = () => {
@@ -64,4 +64,4 @@ function Constact() {
     );
 }
 
- export default Constact;
+ export default Contact;

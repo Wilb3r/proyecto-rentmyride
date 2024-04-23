@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import "../css/Cars.css";
-import "../script/vehicles";
 import { Filters } from "./Filters";
 import ReservationModal from "../modal/Reservation";
 
@@ -44,7 +43,7 @@ export function Vehicles({ cars }) {
                         <OverlayTrigger
                           overlay={
                             <Tooltip id={`tooltip-passengers-${car.id}`}>
-                              {car.passengers}
+                              {car.passengers} Pasajeros
                             </Tooltip>
                           }
                         >
@@ -73,7 +72,7 @@ export function Vehicles({ cars }) {
                         <OverlayTrigger
                           overlay={
                             <Tooltip id={`tooltip-passengers-${car.id}`}>
-                              {car.suitcases}
+                              {car.suitcases} Maletas
                             </Tooltip>
                           }
                         >
@@ -136,7 +135,7 @@ export function Vehicles({ cars }) {
                         <OverlayTrigger
                           overlay={
                             <Tooltip id={`tooltip-passengers-${car.id}`}>
-                              {car.mpg}
+                              {car.mpg} Millas/Galón
                             </Tooltip>
                           }
                         >

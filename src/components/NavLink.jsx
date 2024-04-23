@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink as NL } from "react-router-dom";
 
-const NvLink = ({ to, children, ...props }) => {
+export const NvLink = ({ to, children, ...props }) => {
   return (
     <div>
       <div className="container">
@@ -21,4 +21,4 @@ const NvLink = ({ to, children, ...props }) => {
   );
 };
 
-export default NvLink;
+

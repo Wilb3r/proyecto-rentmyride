@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import '../css/Footer.css';
 
-const Inicio = () => {
+export function Inicio() {
 
    const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -49,4 +49,3 @@ const Inicio = () => {
     );
 }
 
-export default Inicio;
