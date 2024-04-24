@@ -46,13 +46,13 @@ nav a.is-active{
 
 @media (max-width: 1400px) {
   nav ul li {
-    padding: 7px;
+    padding: 2px;
   }
   h2 {
     font-size: 30px;
   }
   .nav-link {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   
 }

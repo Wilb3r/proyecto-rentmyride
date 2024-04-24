@@ -16,6 +16,11 @@ export const Header = styled.header`
 
 export const HeaderText = styled.h2`
     margin-left: 1px; //ajuste margen a la izquierda
+    @media (max-width: 1400px)  {
+        @media (min-width: 1200px){
+            margin-left: -30px;
+        }
+    }
     
 `;
 

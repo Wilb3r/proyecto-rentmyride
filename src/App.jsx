@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import { cars as initialCars } from "./mocks/cars.json"
 import { useFilters } from "./hooks/useFilter.jsx";
 
+
 function App() {
   const [cars] = useState(initialCars);
 
@@ -33,8 +34,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/vehicles" element={<Vehicles cars={filteredCars}/>}/>
         <Route path="*" element={<h1>Page not Found</h1>}/>
-      </Routes>
-
+      </Routes>    
     </div>
   );
 }

@@ -65,6 +65,10 @@
   width: 25%;
 }
 
+.price {
+  text-align: left;
+}
+
 @media (max-width: 1400px) {
   .price {
    font-size: 14px;

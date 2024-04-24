@@ -5,14 +5,21 @@ import "./css/index.css";
 import "./css/App.css";
 import { BrowserRouter } from "react-router-dom";
 import { FiltersProvider } from "./context/filters.jsx";
+import { Footer } from "./components";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div className="container">
+
     <BrowserRouter>
       <FiltersProvider>
+        <div className="container">
         <App />
+        </div>
+        <Footer />
       </FiltersProvider>
+      
     </BrowserRouter>
+    
     ,
-  </div>
+
+  
 );
