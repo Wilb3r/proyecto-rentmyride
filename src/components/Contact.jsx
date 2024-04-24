@@ -30,29 +30,21 @@ export function Contact() {
                     <div className="contact-form">
                         <h3>Formulario de Contacto</h3>
                         <form className="horizontal-form">
-                        &nbsp; 
-                            <div className="form-group">
-                                <label htmlFor="name">Nombre:</label>
-                                &nbsp; 
-                                <input type="text" id="name" name="name" />
+                            <div className="mb-3">
+                                <label htmlFor="name" className="form-label">Nombre:</label>
+                                <input type="text" className="form-control" id="name" name="name" />
                             </div>
-                            &nbsp; 
-                            <div className="form-group">
-                                <label htmlFor="email">Gmail:</label>
-                                &nbsp; 
-                                <input type="email" id="email" name="email" />
+                            <div className="mb-3">
+                                <label htmlFor="email" className="form-label">Gmail:</label>
+                                <input type="email" className="form-control" id="email" name="email" />
                             </div>
-                            &nbsp; 
-                            <div className="form-group">
-                                <label htmlFor="message">Mensaje:</label>
-                                &nbsp; 
-                                <textarea id="message" name="message"></textarea>
+                            <div className="mb-3">
+                                <label htmlFor="message" className="form-label">Mensaje:</label>
+                                <textarea className="form-control" id="message" name="message"></textarea>
                             </div>
-                            &nbsp; 
-                            <div className="button-group">
-                                <button type="submit">Enviar</button>
-                                &nbsp; 
-                                <button onClick={toggleForm} className="close-form-button">Cerrar</button>
+                            <div className="mb-3">
+                                <button type="submit" className="btn btn-primary">Enviar</button>
+                                <button onClick={toggleForm} className="btn btn-secondary ms-2">Cerrar</button>
                             </div>
                         </form>
                     </div>
@@ -64,4 +56,4 @@ export function Contact() {
     );
 }
 
- export default Contact;
+export default Contact;
